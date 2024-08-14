@@ -9,6 +9,7 @@
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
+
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -482,5 +483,44 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+
+/*button_new*/
+
+.container1 {
+  text-align: center;
+}
+.button1 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: var(--font-semi);
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+
+}
+
+.button1:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .button1 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button1 {
+    padding: 10px 15px;
+    font-size: 12px;
   }
 }
